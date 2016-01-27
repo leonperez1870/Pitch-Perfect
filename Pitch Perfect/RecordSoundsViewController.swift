@@ -72,6 +72,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
         stopAudio.hidden = true
         recordingInProgress.hidden = true
+        tapToRecord.hidden = false
         recordButton.enabled = true
         print("recording stopped...")
     }

@@ -126,13 +126,6 @@
                                     <action selector="playSlow:" destination="a1a-Ow-3G0" eventType="touchUpInside" id="ys7-2K-y22"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B12-bF-54X">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="Fast"/>
-                                <connections>
-                                    <action selector="playFast:" destination="a1a-Ow-3G0" eventType="touchUpInside" id="t5B-x7-SZS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyS-7N-jkp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Stop"/>
@@ -152,6 +145,13 @@
                                 <state key="normal" image="Darth"/>
                                 <connections>
                                     <action selector="playDarth:" destination="a1a-Ow-3G0" eventType="touchUpInside" id="Xxz-xn-1YC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B12-bF-54X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Fast"/>
+                                <connections>
+                                    <action selector="playFast:" destination="a1a-Ow-3G0" eventType="touchUpInside" id="t5B-x7-SZS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,10 +179,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="SSv-rF-Bz9"/>
-                                <exclude reference="B12-bF-54X"/>
                                 <exclude reference="jyS-7N-jkp"/>
                                 <exclude reference="274-s4-dhi"/>
                                 <exclude reference="lFu-oy-7N8"/>
+                                <exclude reference="B12-bF-54X"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ISp-9D-BMc"/>
@@ -202,10 +202,10 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="SSv-rF-Bz9"/>
-                                <include reference="B12-bF-54X"/>
                                 <include reference="jyS-7N-jkp"/>
                                 <include reference="274-s4-dhi"/>
                                 <include reference="lFu-oy-7N8"/>
+                                <include reference="B12-bF-54X"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ISp-9D-BMc"/>
