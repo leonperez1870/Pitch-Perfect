@@ -62,11 +62,12 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(-500)
     }
     
+    //Many thanks to alexpaul for showing the door! https://github.com/alexpaul/PitchPerfect/blob/master/Pitch%20Perfect/PlaySoundsViewController.swift
     func playAudioWithRate(rate: Float) {
         audioPlayer.currentTime = 0.0
-        audioPlayer.rate = rate // range 0.5 for half the normal speed to 2.0 double the normal speed, 1.0 is normal speed
-        audioPlayer.prepareToPlay() // pre loads the buffer
-        audioPlayer.play() // plays sound asynchronously
+        audioPlayer.rate = rate
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
     }
     
     func playAudioWithVariablePitch(pitch: Float){
