@@ -39,29 +39,40 @@
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLU-nx-R1g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlZ-Jw-k2i">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x89-Qz-gC5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0o1-xb-IKk"/>
                             <constraint firstItem="BFk-TO-ixw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2AP-jy-4ff"/>
+                            <constraint firstItem="tlZ-Jw-k2i" firstAttribute="top" secondItem="x89-Qz-gC5" secondAttribute="bottom" constant="8" id="5bS-1B-Cth"/>
                             <constraint firstItem="vS8-wo-NVv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hfq-uo-Qmg"/>
                             <constraint firstItem="BFk-TO-ixw" firstAttribute="top" secondItem="vS8-wo-NVv" secondAttribute="bottom" constant="182" id="Jv1-8i-ZQz"/>
                             <constraint firstItem="x89-Qz-gC5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="NUr-Lo-i5m"/>
                             <constraint firstItem="vS8-wo-NVv" firstAttribute="top" secondItem="x89-Qz-gC5" secondAttribute="bottom" constant="8" id="WCE-m5-B1p"/>
+                            <constraint firstItem="tlZ-Jw-k2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZM-Al-bmd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="x89-Qz-gC5"/>
                                 <exclude reference="vS8-wo-NVv"/>
                                 <exclude reference="BFk-TO-ixw"/>
+                                <exclude reference="tlZ-Jw-k2i"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2AP-jy-4ff"/>
-                                <exclude reference="Jv1-8i-ZQz"/>
-                                <exclude reference="Hfq-uo-Qmg"/>
-                                <exclude reference="WCE-m5-B1p"/>
                                 <exclude reference="0o1-xb-IKk"/>
                                 <exclude reference="NUr-Lo-i5m"/>
+                                <exclude reference="5bS-1B-Cth"/>
+                                <exclude reference="hZM-Al-bmd"/>
+                                <exclude reference="Hfq-uo-Qmg"/>
+                                <exclude reference="WCE-m5-B1p"/>
+                                <exclude reference="2AP-jy-4ff"/>
+                                <exclude reference="Jv1-8i-ZQz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -69,14 +80,17 @@
                                 <include reference="x89-Qz-gC5"/>
                                 <include reference="vS8-wo-NVv"/>
                                 <include reference="BFk-TO-ixw"/>
+                                <include reference="tlZ-Jw-k2i"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2AP-jy-4ff"/>
-                                <include reference="Jv1-8i-ZQz"/>
-                                <include reference="Hfq-uo-Qmg"/>
-                                <include reference="WCE-m5-B1p"/>
                                 <include reference="0o1-xb-IKk"/>
                                 <include reference="NUr-Lo-i5m"/>
+                                <include reference="5bS-1B-Cth"/>
+                                <include reference="hZM-Al-bmd"/>
+                                <include reference="Hfq-uo-Qmg"/>
+                                <include reference="WCE-m5-B1p"/>
+                                <include reference="2AP-jy-4ff"/>
+                                <include reference="Jv1-8i-ZQz"/>
                             </mask>
                         </variation>
                     </view>
@@ -85,6 +99,7 @@
                         <outlet property="recordButton" destination="x89-Qz-gC5" id="boI-Zd-BrX"/>
                         <outlet property="recordingInProgress" destination="vS8-wo-NVv" id="vwq-7Y-uHa"/>
                         <outlet property="stopAudio" destination="BFk-TO-ixw" id="Ig2-VW-R23"/>
+                        <outlet property="tapToRecord" destination="tlZ-Jw-k2i" id="JKO-wz-92e"/>
                         <segue destination="a1a-Ow-3G0" kind="show" identifier="stopRecording" id="Lfa-y9-GcX"/>
                     </connections>
                 </viewController>

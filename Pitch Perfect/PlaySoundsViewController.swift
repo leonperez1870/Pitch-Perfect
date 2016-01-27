@@ -27,8 +27,8 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
         
         audioEngine = AVAudioEngine()
-        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathURL)
-        audioPlayer = try! AVAudioPlayer(contentsOfURL: receivedAudio.filePathURL)
+        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         audioPlayer.enableRate = true
         // Do any additional setup after loading the view.
     }
